@@ -40,12 +40,12 @@ Aplikasi ini memiliki alur lengkap dari awal hingga akhir, meliputi:
 
 | Splash Screen | Login | Register |
 |:---:|:---:|:---:|
-| <img src="https://raw.githubusercontent.com/allprmn/KopiDanNyemil/main/screenshots/splash.png" width="200"> | <img src="https://raw.githubusercontent.com/allprmn/KopiDanNyemil/main/screenshots/login.png" width="200"> | <img src="https://raw.githubusercontent.com/allprmn/KopiDanNyemil/main/screenshots/register.png" width="200"> |
+| <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Splash.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Login.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Register.png" width="200"> |
 
 | Home (Daftar Menu) | Detail Produk | Form Alamat (Checkout) |
 |:---:|:---:|:---:|
-| <img src="LINK_GAMBAR_HOME" width="200"> | <img src="LINK_GAMBAR_DETAIL" width="200"> | <img src="LINK_GAMBAR_CHECKOUT" width="200"> |
+| <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Home.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Detail.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Order.png" width="200"> |
 
 | Order History | Profile | Konfirmasi Pesanan |
 |:---:|:---:|:---:|
-| <img src="LINK_GAMBAR_ORDER" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Profil.png"> | <img src="LINK_GAMBAR_KONFIRMASI" width="200"> |
+| <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Riwayat.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Profil.png"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/SelesaiOrder.png" width="200"> |
