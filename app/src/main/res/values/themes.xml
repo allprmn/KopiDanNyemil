@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Base.Theme.KopiDanNyemil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.KopiDanNyemil" parent="Theme.MaterialComponents.Light.NoActionBar">
 
         <!-- WAJIB DIISI agar komponen tidak crash -->
         <item name="colorPrimary">@color/primary</item>
