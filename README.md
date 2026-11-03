@@ -46,6 +46,6 @@ Aplikasi ini memiliki alur lengkap dari awal hingga akhir, meliputi:
 |:---:|:---:|:---:|
 | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Home.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Detail.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Order.png" width="200"> |
 
-| Order History | Profile | Konfirmasi Pesanan |
-|:---:|:---:|:---:|
-| <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Riwayat.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Profil.png"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/SelesaiOrder.png" width="200"> |
+| Order History |                                         Profile                                          | Konfirmasi Pesanan |
+|:---:|:----------------------------------------------------------------------------------------:|:---:|
+| <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Riwayat.png" width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/Profil.png"> width="200"> | <img src="https://github.com/allprmn/KopiDanNyemil/blob/master/screenshots/SelesaiOrder.png" width="200"> |
