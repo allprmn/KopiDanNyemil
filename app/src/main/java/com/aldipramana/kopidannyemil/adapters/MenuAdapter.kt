@@ -21,9 +21,16 @@ class MenuAdapter(private val listMenu: List<Menu>) : RecyclerView.Adapter<MenuA
         holder.tvName.text = menu.name
         holder.tvDesc.text = menu.description
         holder.tvPrice.text = menu.price
+        holder.imgMenu.setImageResource(menu.imageResId)
 
-        // Jika nanti Anda punya gambar asli di drawable, gunakan baris ini:
-        // holder.imgMenu.setImageResource(menu.imageResId)
+        holder.itemView.setOnClickListener {
+            val intent = android.content.Intent(holder.itemView.context, com.aldipramana.kopidannyemil.activities.DetailActivity::class.java)
+            intent.putExtra("NAMA_MENU", menu.name)
+            intent.putExtra("HARGA_MENU", menu.price)
+            intent.putExtra("DESC_MENU", menu.description)
+            intent.putExtra("GAMBAR_MENU", menu.imageResId)
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int = listMenu.size

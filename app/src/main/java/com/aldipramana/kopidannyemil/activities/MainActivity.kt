@@ -8,6 +8,7 @@ import com.aldipramana.kopidannyemil.R
 import com.aldipramana.kopidannyemil.adapters.MenuAdapter
 import com.aldipramana.kopidannyemil.models.Menu
 import android.content.Intent
+import android.widget.TextView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
@@ -19,23 +20,37 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        val tvGreeting = findViewById<TextView>(R.id.tvGreeting)
+        val sharedPreferences = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+        val username = sharedPreferences.getString("USERNAME", "User") ?: "User"
+        tvGreeting.text = "Halo $username,"
         rvMenu = findViewById(R.id.rvMenu)
+
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNav.selectedItemId = R.id.nav_home // Set menu Home sebagai default
 
         bottomNav.setOnItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.nav_home -> true
+                R.id.nav_home -> {
+                    if (this !is MainActivity) {
+                        startActivity(Intent(this, MainActivity::class.java))
+                        overridePendingTransition(0, 0)
+                    }
+                    true
+                }
                 R.id.nav_order -> {
-                    startActivity(Intent(this, OrderActivity::class.java))
-                    overridePendingTransition(0, 0)
+                    if (this !is OrderHistoryActivity) {
+                        startActivity(Intent(this, OrderHistoryActivity::class.java))
+                        overridePendingTransition(0, 0)
+                    }
                     true
                 }
                 R.id.nav_profile -> {
-                    startActivity(Intent(this, ProfileActivity::class.java))
-                    overridePendingTransition(0, 0)
+                    if (this !is ProfileActivity) {
+                        startActivity(Intent(this, ProfileActivity::class.java))
+                        overridePendingTransition(0, 0)
+                    }
                     true
                 }
                 else -> false
@@ -43,12 +58,12 @@ class MainActivity : AppCompatActivity() {
         }
 
         val listMenu = listOf(
-            Menu("Kopi Susu Gula Aren", "Espresso, susu, gula aren", "Rp 22.000", R.drawable.ic_launcher_background),
-            Menu("Donat Cokelat", "Donat empuk, glaze cokelat", "Rp 12.000", R.drawable.ic_launcher_background),
-            Menu("Sourdough Loaf", "Roti fermentasi alami", "Rp 35.000", R.drawable.ic_launcher_background),
-            Menu("Cappuccino", "Espresso, foam susu lembut", "Rp 25.000", R.drawable.ic_launcher_background),
-            Menu("Matcha Latte", "Matcha Jepang, susu segar", "Rp 27.000", R.drawable.ic_launcher_background),
-            Menu("Croissant Butter", "Pastry berlapis mentega", "Rp 20.000", R.drawable.ic_launcher_background)
+            Menu("Kopi Karuhun", "Espresso, gula aren", "Rp 7.000", R.drawable.kopihitam),
+            Menu("Kulub Sampeu", "Dibuat dengan sampe asli yang di tanam sendiri", "Rp 12.000", R.drawable.singkong),
+            Menu("Kopi Susu", "Campuran antara expreso dan susu, dengan takaran yang pas", "Rp 15.000", R.drawable.kopisusu),
+            Menu("Teh Susu", "Campuran antara teh dan susu", "Rp 10.000", R.drawable.tehsusu),
+            Menu("Getuk Singkong", "Diproses dengan 1001 pukulan menghasilkan teksture yang kenyal", "Rp 20.000", R.drawable.getuk),
+            Menu("Bala-bala Bonteng", "Gorengan yang cocok dinikmati saat cuaca panas ataupun dingin", "Rp 3.000", R.drawable.balabala)
         )
 
         rvMenu.layoutManager = LinearLayoutManager(this)

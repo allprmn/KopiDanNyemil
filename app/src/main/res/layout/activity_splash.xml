@@ -7,33 +7,26 @@
     android:background="@color/background"
     tools:context=".activities.SplashActivity">
 
-    <!-- Logo Bulat -->
-    <View
+    <!-- Logo -->
+    <com.google.android.material.card.MaterialCardView
         android:id="@+id/logoPlaceholder"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:background="@drawable/bg_circle_logo"
+        app:cardCornerRadius="75dp"
+        app:cardElevation="0dp"
         app:layout_constraintBottom_toTopOf="@+id/tvTitle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintVertical_chainStyle="packed">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop" />
+    </com.google.android.material.card.MaterialCardView>
 
-    <!-- Teks di dalam Logo -->
-    <TextView
-        android:id="@+id/tvLogoText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Logo"
-        android:textColor="@color/primary"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/logoPlaceholder"
-        app:layout_constraintEnd_toEndOf="@+id/logoPlaceholder"
-        app:layout_constraintStart_toStartOf="@+id/logoPlaceholder"
-        app:layout_constraintTop_toTopOf="@+id/logoPlaceholder" />
 
-    <!-- Judul Aplikasi -->
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"

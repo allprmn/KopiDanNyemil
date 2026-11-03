@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Halo Nama,"
+        android:text="Selamat User,"
         android:textColor="@color/primary"
         android:textSize="28sp"
         android:textStyle="bold"

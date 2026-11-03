@@ -7,12 +7,12 @@ import com.aldipramana.kopidannyemil.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
 
-class OrderActivity : AppCompatActivity() {
+class CheckoutActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_order)
+        setContentView(R.layout.activity_checkout)
 
-        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigationOrder)
+        val bottomNav = findViewById<BottomNavigationView>(R.id.bottomNavigation)
         bottomNav.selectedItemId = R.id.nav_order
 
         bottomNav.setOnItemSelectedListener { item ->

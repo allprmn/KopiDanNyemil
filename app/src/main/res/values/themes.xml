@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.KopiDanNyemil" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.KopiDanNyemil" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- WAJIB DIISI agar komponen tidak crash -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/primary</item>
+
+        <!-- Membuat warna status bar (atas) menjadi krem -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+
+        <item name="android:textColorHint">@color/text_secondary</item>
     </style>
 
     <style name="Theme.KopiDanNyemil" parent="Base.Theme.KopiDanNyemil" />

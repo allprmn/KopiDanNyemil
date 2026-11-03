@@ -14,16 +14,25 @@
         android:layout_height="wrap_content"
         android:padding="12dp">
 
-        <!-- Gambar Menu (Sementara pakai warna solid dulu) -->
-        <ImageView
-            android:id="@+id/imgMenu"
+        <!-- Gambar Menu -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardImgMenu"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:background="@color/secondary"
-            android:scaleType="centerCrop"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/secondary"
+                android:scaleType="centerCrop" />
+
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Nama Menu -->
         <TextView
@@ -35,9 +44,11 @@
             android:textColor="@color/text_primary"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgMenu"
-            app:layout_constraintTop_toTopOf="@+id/imgMenu" />
+            app:layout_constraintStart_toEndOf="@+id/cardImgMenu"
+            app:layout_constraintTop_toTopOf="@+id/cardImgMenu" />
 
         <!-- Deskripsi Singkat -->
         <TextView
@@ -49,8 +60,10 @@
             android:text="Deskripsi singkat menu"
             android:textColor="@color/text_secondary"
             android:textSize="12sp"
+            android:maxLines="2"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/imgMenu"
+            app:layout_constraintStart_toEndOf="@+id/cardImgMenu"
             app:layout_constraintTop_toBottomOf="@+id/tvMenuName" />
 
         <!-- Harga -->
@@ -64,8 +77,8 @@
             android:textColor="@color/primary"
             android:textSize="14sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/imgMenu"
-            app:layout_constraintStart_toEndOf="@+id/imgMenu" />
+            app:layout_constraintBottom_toBottomOf="@+id/cardImgMenu"
+            app:layout_constraintStart_toEndOf="@+id/cardImgMenu" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>
