@@ -35,6 +35,21 @@ Aplikasi ini memiliki alur lengkap dari awal hingga akhir, meliputi:
     ```bash
     git clone https://github.com/allprmn/KopiDanNyemil.git
 
+## Alur Penggunaan Aplikasi (Step-by-Step)
+
+Berikut adalah langkah-langkah menggunakan aplikasi dari awal hingga pesanan berhasil:
+
+1. **Halaman Splash Screen**: Saat aplikasi dibuka, pengguna akan disambut oleh halaman Splash. Klik tombol **"Start now"**.
+2. **Halaman Login**: 
+   * Masukkan **Username:** `admin` dan **Password:** `admin123` (gunakan data dummy ini).
+   * Klik tombol **"Login"**. *(Anda juga bisa mencoba klik "Daftar di sini" untuk melihat halaman Register)*.
+3. **Halaman Home**: Setelah login berhasil, Anda akan diarahkan ke halaman utama yang menampilkan sapaan **"Halo admin,"** beserta daftar produk.
+4. **Halaman Detail Produk**: Pilih dan klik salah satu produk (misal: *Kopi Susu Gula Aren*). Anda akan diarahkan ke halaman detail yang menampilkan gambar, harga, dan deskripsi.
+5. **Halaman Checkout (Alamat)**: Klik tombol **"Pesan Sekarang"**. Isi form alamat pengiriman (Nama Lengkap, Alamat, dan Patokan).
+6. **Halaman Konfirmasi**: Klik tombol **"Order dan Kirim"**. Anda akan melihat halaman konfirmasi bahwa pesanan berhasil dibuat.
+7. **Navigasi Bawah (Bottom Navigation)**:
+   * Klik tombol **"Oke"** di halaman konfirmasi untuk kembali ke Home.
+   * Anda juga bisa menggunakan navigasi bawah (melayang) untuk berpindah ke halaman **Order History** (melihat status pesanan) dan **Profile** (melihat/mengubah nama pengguna).
 
 ## Screenshot Aplikasi
 
